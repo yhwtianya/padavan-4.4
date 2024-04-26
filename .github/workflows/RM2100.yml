@@ -1,4 +1,4 @@
-name: Build Padavan
+name: Build Padavan RM2100
 
 on: 
   release:
@@ -26,7 +26,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - build_variant: "mt7621"
+          - build_variant: "mt7621-usb-2"
             targets: "RM2100"
     steps:
       - uses: actions/checkout@v2
